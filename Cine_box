@@ -1,0 +1,8 @@
+git init
+git add .
+git commit -m "Cine Box TV — plataforma completa (Next.js + NextAuth + Stripe + CMS + SPA)"
+
+# Troque pelo nome do seu repositório
+git branch -M main
+git remote add origin https://github.com/<SEU_USUARIO>/<REPO>.git
+git push -u origin main 
