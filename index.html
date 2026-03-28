@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinebox IPTV</title>
+  <link rel="canonical" href="https://www.cineboxiptv.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <div class="brand-mark">CI</div>
+      <div class="brand-name">
+        <strong>Cinebox</strong>
+        <span>IPTV</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="#canais">Canais</a>
+      <a href="#filmes">Filmes</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Campeão de bilheteria</p>
+        <h1>Vingadores na sua tela com qualidade Cinebox IPTV</h1>
+        <p>Assista aos maiores sucessos do cinema e canais ao vivo em um só lugar. O melhor do entretenimento direto no seu aparelho.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" onclick="scrollToSection('filmes')">Ver trailers</button>
+          <button class="btn btn-secondary" type="button" onclick="openWhatsApp()">Fale conosco</button>
+        </div>
+        <p class="hero-domain">www.cineboxiptv.com</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <span class="hero-label">Vingadores</span>
+          <img src="https://image.tmdb.org/t/p/w780/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Vingadores">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="canais">
+      <div class="section-header">
+        <p class="section-subtitle">Canais ao vivo</p>
+        <h2>Assista aos principais canais agora</h2>
+      </div>
+      <div class="grid cards-grid">
+        <button class="card channel-card" type="button" onclick="openPlayer('HRyy_FdyieU')">
+          <div class="card-icon">Esporte</div>
+          <h3>Esporte 24h</h3>
+          <p>Transmissões ao vivo de jogos, notícias e gols.</p>
+        </button>
+        <button class="card channel-card" type="button" onclick="openPlayer('mXHanabYyOg')">
+          <div class="card-icon">Filmes</div>
+          <h3>Filmes Premium</h3>
+          <p>Blockbusters e lançamentos para você assistir.</p>
+        </button>
+        <button class="card channel-card" type="button" onclick="openPlayer('jfVTJm9NilA')">
+          <div class="card-icon">Séries</div>
+          <h3>Séries e Novelas</h3>
+          <p>Maratonas e episódios novos todos os dias.</p>
+        </button>
+        <button class="card channel-card" type="button" onclick="openPlayer('20sPlyrMbeY')">
+          <div class="card-icon">Kids</div>
+          <h3>Kids+</h3>
+          <p>Programação infantil divertida e segura.</p>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="filmes">
+      <div class="section-header">
+        <p class="section-subtitle">Lançamentos</p>
+        <h2>Filmes e séries em destaque</h2>
+      </div>
+      <div class="movie-banner-row">
+        <article class="movie-banner-card">
+          <img src="https://image.tmdb.org/t/p/w780/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg" alt="Super Mario Bros">
+          <div class="movie-overlay">
+            <div>
+              <h3>Super Mario Bros</h3>
+              <p>Trailer oficial</p>
+            </div>
+            <button class="btn btn-outline" type="button" onclick="openPlayer('HRyy_FdyieU')">Assistir trailer</button>
+          </div>
+        </article>
+        <article class="movie-banner-card">
+          <img src="https://image.tmdb.org/t/p/w780/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="Coringa">
+          <div class="movie-overlay">
+            <div>
+              <h3>Coringa</h3>
+              <p>Trailer oficial</p>
+            </div>
+            <button class="btn btn-outline" type="button" onclick="openPlayer('jfVTJm9NilA')">Assistir trailer</button>
+          </div>
+        </article>
+        <article class="movie-banner-card">
+          <img src="https://image.tmdb.org/t/p/w780/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Vingadores - Doutor Destino">
+          <div class="movie-overlay">
+            <div>
+              <h3>Vingadores: Doutor Destino</h3>
+              <p>Trailer oficial</p>
+            </div>
+            <button class="btn btn-outline" type="button" onclick="openPlayer('TcMBFSGVi1c')">Assistir trailer</button>
+          </div>
+        </article>
+        <article class="movie-banner-card">
+          <img src="https://image.tmdb.org/t/p/w780/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg" alt="Ad Astra">
+          <div class="movie-overlay">
+            <div>
+              <h3>Ad Astra</h3>
+              <p>Trailer oficial</p>
+            </div>
+            <button class="btn btn-outline" type="button" onclick="openPlayer('TLh2kzoNnr8')">Assistir trailer</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="planos">
+      <div class="section-header">
+        <p class="section-subtitle">Plano único</p>
+        <h2>Assinatura completa por apenas R$ 25,90</h2>
+      </div>
+      <div class="grid pricing-grid">
+        <article class="plan-card plan-featured">
+          <h3>Plano Cinebox IPTV</h3>
+          <p class="plan-price">R$ 25,90/mês</p>
+          <ul>
+            <li>Mais de 50 canais ao vivo</li>
+            <li>Acesso em até 2 dispositivos</li>
+            <li>Filmes campeões de bilheteria</li>
+            <li>Suporte via WhatsApp</li>
+          </ul>
+          <button class="btn btn-primary" type="button" onclick="openWhatsApp()">Assinar agora</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="playerModal" class="modal">
+    <div class="modal-window">
+      <button class="modal-close" type="button" onclick="closePlayer()" aria-label="Fechar">×</button>
+      <div class="video-frame">
+        <iframe id="playerFrame" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Player de vídeo"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <button class="whatsapp-button" type="button" onclick="openWhatsApp()">💬</button>
+
+  <footer class="site-footer" id="contato">
+    <div>
+      <h2>Cinebox IPTV</h2>
+      <p>Transmissão de TV ao vivo com os principais canais e entretenimento sob demanda.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#canais">Canais</a>
+      <a href="#filmes">Filmes</a>
+      <a href="#planos">Planos</a>
+      <a href="https://www.cineboxiptv.com" target="_blank" rel="noopener">www.cineboxiptv.com</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
